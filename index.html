@@ -370,8 +370,26 @@ footer{
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
-  nav{padding:1rem 1.5rem}
-  .nav-links a{padding:.4rem .7rem;font-size:.82rem}
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+  }
+  .nav-links {
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links button {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.85rem;
+    border-left: none;
+    border-top: 1px solid rgba(160, 120, 40, 0.15);
+    margin: 0.2rem;
+  }
+  .nav-logo {
+    margin-bottom: 0.2rem;
+  }
   .hero{grid-template-columns:1fr;min-height:auto;padding:2rem 1.5rem}
   .hero-left{border-right:none;border-bottom:1px solid rgba(160,120,40,.18);padding:2rem 0}
   .hero-right{padding:1.5rem 0}
@@ -384,7 +402,6 @@ footer{
   .pillar{border-right:none;border-bottom:1px solid rgba(244,234,208,.08)}
   .vert{display:none}
 }
-
 .nav-links button {
   font-family:'EB Garamond',serif;
   font-size:.95rem;letter-spacing:.04em;
